@@ -1081,7 +1081,6 @@ textarea {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('images/overlay.png');
 }
 
 .image img {
@@ -2065,6 +2064,8 @@ body {
 .main.style1 h2 {
   font-size: 4.25em;
   line-height: 1em;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black; */
 }
 
 .main.style1 > .content {
@@ -2298,7 +2299,11 @@ body.is-touch .main {
   border-left-color: rgba(185, 186, 187, 0.2);
   font-size: 0.9em;
 }
-
+#footer ul span {
+  border-left: 1px solid rgba(185, 186, 187, 0.2);
+  padding-left: 7.8px;
+  margin-left: 7.8px;
+}
 @media screen and (max-width: 1000px) {
   #footer {
     -moz-flex-direction: column;
@@ -2337,32 +2342,32 @@ body.is-touch .main {
 /* Intro */
 
 #intro {
-  background: url('images/overlay.png'),
-    url('../../images/background-images/background-1.jpg');
-  background-size: 256px 256px, cover;
+  background: url('../../images/background-images/background-1.jpg');
+  background-size: cover;
+
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
-  background-repeat: repeat, no-repeat;
+  background-repeat: no-repeat;
 }
 
 /* One */
 
 #one {
-  background: url('images/overlay.png'),
-    url('../../images/background-images/background-2.jpg');
-  background-size: 256px 256px, cover;
+  background: url('../../images/background-images/background-2.jpg');
+  background-size: cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
+  background-repeat: no-repeat;
 }
 
 /* Two */
 
 #two {
-  background: url('images/overlay.png'),
-    url('../../images/background-images/background-3.jpg');
-  background-size: 256px 256px, cover;
+  background: url('../../images/background-images/background-3.jpg');
+  background-size: cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
+  background-repeat: no-repeat;
 }
 
 /* Contact */
